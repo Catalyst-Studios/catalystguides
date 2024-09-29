@@ -1,0 +1,11 @@
+[project]
+name = "catalyststudioguides"
+version = "0.0.1"
+description = ""
+readme = "index.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs",
+    "mkdocs-dracula-theme",
+    "mkdocs-awesome-pages-plugin",
+]

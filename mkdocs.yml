@@ -1,0 +1,14 @@
+site_name: Catalyst Studios Guides
+# site_url: 
+repo_url: https://github.com/Catalyst-Studios/catalystguides
+repo_name: catalystguides
+# edit_uri: main/dev/docs/
+copyright: Test copyright Arc
+theme:
+    name: dracula
+    locale: en
+    # custom_dir: 
+extra_css:
+    - css/override.css
+plugins:
+    - awesome-pages
