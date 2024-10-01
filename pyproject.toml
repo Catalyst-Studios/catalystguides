@@ -1,11 +1,19 @@
 [project]
 name = "catalyststudioguides"
 version = "0.0.1"
-description = ""
+description = "Guides for Catalyst Studios modpacks"
 readme = "index.md"
 requires-python = ">=3.12"
 dependencies = [
     "mkdocs",
-    "mkdocs-dracula-theme",
-    "mkdocs-awesome-pages-plugin",
+	"mkdocs-material",
+	"mkdocs-glightbox",
+	"mkdocs-video",
+	"mkdocs-git-revision-date-localized-plugin",
+	"mkdocs-git-authors-plugin",
+	"mkdocs-minify-plugin",
+	"mkdocs-autolinks-plugin",
+	"mkdocs-autorefs",
+	"mkdocs-awesome-pages-plugin",
+	"mkdocs-open-in-new-tab",
 ]

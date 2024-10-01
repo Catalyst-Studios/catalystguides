@@ -2,13 +2,38 @@ site_name: Catalyst Studios Guides
 # site_url: 
 repo_url: https://github.com/Catalyst-Studios/catalystguides
 repo_name: catalystguides
-# edit_uri: main/dev/docs/
+edit_uri: edit/dev/docs/
 copyright: Test copyright Arc
+strict: !ENV [ENABLE_STRICT, true]
 theme:
-    name: dracula
+    name: material
     locale: en
     # custom_dir: 
+# extra:
+    # homepage: 
 extra_css:
     - css/override.css
 plugins:
-    - awesome-pages
+    - search
+    - glightbox
+    - mkdocs-video
+    - autolinks # may adversely affect build times
+    - open-in-new-tab
+    - git-revision-date-localized:
+        type: timeago
+        fallback_to_build_date: false
+        enable_creation_date: true
+        strict: true
+    - git-authors:
+        show_contribution: true
+        show_line_count: true
+        show_email_address: false
+        fallback_to_empty: true
+        sort_authors_by: contribution
+        strict: true
+    - minify:
+        minify_html: true
+    - autorefs:
+        resolve_closest: true
+    - awesome-pages:
+        collapse_single_pages: true

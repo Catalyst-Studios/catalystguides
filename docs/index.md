@@ -1,17 +1,65 @@
 # Welcome to Catalyst Studios
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Heading 1
 
-## Commands
+## H2
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Heading 2
 
-## Project layout
+### H3
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Heading 3
+
+#### H4
+
+Heading 4
+
+---
+
+Paragraph 1 with extra line between
+
+Paragraph 2
+
+---
+
+Paragraph 1 with a line break <br>
+Paragraph 2
+
+---
+
+**Bold**
+
+*Italics*
+
+***Bold and italics***
+
+> Here is a blockquote which doesn't work with dracula
+
+---
+
+1. First item
+2. Second item
+3. Third item
+4. Fourth item
+
+---
+
+- First item
+- Second item
+- Third item
+- Fourth item
+
+`this is a code block`
+
+```
+multiline 
+code 
+block
+```
+
+??? note "Note"
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+
