@@ -9,6 +9,7 @@ dependencies = [
 	"mkdocs-material",
 	"mkdocs-glightbox",
 	"mkdocs-video",
+	"mkdocs-audio",
 	"mkdocs-git-revision-date-localized-plugin",
 	"mkdocs-git-authors-plugin",
 	"mkdocs-minify-plugin",

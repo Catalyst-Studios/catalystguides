@@ -5,24 +5,47 @@ repo_name: catalystguides
 edit_uri: edit/dev/docs/
 copyright: Test copyright Arc
 strict: !ENV [ENABLE_STRICT, true]
-theme:
-    name: material
-    locale: en
-    # custom_dir: 
 # extra:
     # homepage: 
 extra_css:
-    - css/override.css
+    - stylesheets/extra.css
+theme:
+    name: material
+    locale: en
+    custom_dir: overrides
+    palette:
+        #- media: "(prefers-color-scheme)"
+         # toggle:
+            #icon: material/brightness-auto
+            #name: Switch to light mode
+
+        - media: "(prefers-color-scheme: light)"
+          scheme: default 
+          primary: custom
+          accent: custom
+          toggle:
+            icon: material/brightness-7
+            name: Switch to dark mode
+
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: custom
+          accent: custom
+          toggle:
+            icon: material/brightness-4
+            name: Switch to system preference
+        
 plugins:
     - search
-    - glightbox
     - mkdocs-video
+    - mkdocs-audio
     - autolinks # may adversely affect build times
     - open-in-new-tab
     - git-revision-date-localized:
         type: timeago
         fallback_to_build_date: false
         enable_creation_date: true
+        enabled: !ENV [ENABLED_GIT_REVISION_DATE, false]
         strict: true
     - git-authors:
         show_contribution: true
@@ -30,6 +53,7 @@ plugins:
         show_email_address: false
         fallback_to_empty: true
         sort_authors_by: contribution
+        enabled: !ENV [ENABLE_GIT_AUTHORS, false]
         strict: true
     - minify:
         minify_html: true
@@ -37,3 +61,6 @@ plugins:
         resolve_closest: true
     - awesome-pages:
         collapse_single_pages: true
+    - glightbox:
+        draggable: false
+        auto_caption: true
