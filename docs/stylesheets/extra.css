@@ -1,5 +1,11 @@
-:root {
-	--md-primary-fg-color:	#0e152a;
-	--md-primary-bg-color	#ff;
-	--md-accent-fg-color:	#f3550c;
+[data-md-color-scheme="slate"] {
+	--md-hue: 210; 
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold !important;
+}
+
+body > header {
+    border-bottom: 1px solid #ffa831;
 }

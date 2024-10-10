@@ -5,8 +5,14 @@ repo_name: catalystguides
 edit_uri: edit/dev/docs/
 copyright: Test copyright Arc
 strict: !ENV [ENABLE_STRICT, true]
-# extra:
-    # homepage: 
+extra:
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/Catalyst-Studios
+          name: GitHub
+        - icon: fontawesome/brands/discord
+          link: https://discord.gg/YCHPXeW9GZ
+          name: Discord
 extra_css:
     - stylesheets/extra.css
 theme:
@@ -14,24 +20,40 @@ theme:
     locale: en
     custom_dir: overrides
     logo: img/catyLogo.png
+    favicon: img/catyLogo.png
+    font: 
+        text: Rajdhani
+    icon:
+        repo: fontawesome/brands/github
+        edit: material/pencil
+    features:
+        - navigation.instant
+        - navigation.tracking
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.path
+        - navigation.indexes
+        - toc.follow
+        - navigation.top
+        - announce.dismiss
+        - navigation.footer
+        - content.action.edit
     palette:
         - media: "(prefers-color-scheme: light)"
           scheme: default 
-          primary: custom
-          accent: custom
+          #primary: custom
+          #accent: custom
           toggle:
             icon: material/weather-sunny
             name: Switch to dark mode
 
         - media: "(prefers-color-scheme: dark)"
           scheme: slate
-          primary: custom
-          accent: custom
+          #primary: custom
+          #accent: custom
           toggle:
             icon: material/weather-night
             name: Switch to light mode
-    features:
-        - 
 
 plugins:
     - search
@@ -45,14 +67,17 @@ plugins:
         enable_creation_date: true
         enabled: !ENV [ENABLED_GIT_REVISION_DATE, false]
         strict: true
-    - git-authors:
-        show_contribution: true
-        show_line_count: true
-        show_email_address: false
-        fallback_to_empty: true
-        sort_authors_by: contribution
-        enabled: !ENV [ENABLE_GIT_AUTHORS, false]
-        strict: true
+    - git-committers:
+        repository: Catalyst-Studios/catalystguides
+        branch: main
+        enabled: !ENV [CI, false]
+        #show_contribution: true
+        #show_line_count: true
+        #show_email_address: false
+        #fallback_to_empty: true
+        #sort_authors_by: contribution
+        #enabled: !ENV [ENABLE_GIT_AUTHORS, false]
+        #strict: true
     - minify:
         minify_html: true
     - autorefs:
