@@ -15,6 +15,11 @@ extra:
           name: Discord
 extra_css:
     - stylesheets/extra.css
+extra_javascript:
+    - javascripts/extra.js
+    - javascripts/tablesort.js
+    - javascripts/mathjax.js
+    - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 theme:
     name: material
     locale: en
@@ -38,6 +43,8 @@ theme:
         - announce.dismiss
         - navigation.footer
         - content.action.edit
+        - content.tooltips
+        - content.footnote.tooltips
     palette:
         - media: "(prefers-color-scheme: light)"
           scheme: default 
@@ -54,7 +61,6 @@ theme:
           toggle:
             icon: material/weather-night
             name: Switch to light mode
-
 plugins:
     - search
     - mkdocs-video
@@ -79,7 +85,7 @@ plugins:
         #enabled: !ENV [ENABLE_GIT_AUTHORS, false]
         #strict: true
     - minify:
-        minify_html: true
+        minify_html: !ENV [ENABLE_MINIFY, false]
     - autorefs:
         resolve_closest: true
     - awesome-pages:
@@ -87,3 +93,38 @@ plugins:
     - glightbox:
         draggable: false
         auto_caption: true
+markdown_extensions:
+    - abbr
+    - admonition
+    - attr_list
+    - def_list
+    - footnotes
+    - md_in_html
+    - toc:
+        permalink: true
+    - tables
+    - pymdownx.snippets
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.highlight:
+        line_spans: __span
+    - pymdownx.arithmatex:
+        generic: true
+    - pymdownx.betterem
+    - pymdownx.caret
+    - pymdownx.mark
+    - pymdownx.tilde
+    - pymdownx.critic
+    - pymdownx.emoji:
+        emoji_index: !!python/name:material.extensions.emoji.twemoji 
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - pymdownx.inlinehilite
+    - pymdownx.keys
+    - pymdownx.tabbed:
+        alternate_style: true
+    - pymdownx.tasklist:
+        custom_checkbox: true
+        clickable_checkbox: true
+    - pymdownx.extra
+    - pymdownx.fancylists
+    - pymdownx.progressbar

@@ -12,9 +12,7 @@ a
 
 ## Launchers
 
-a
-
-
+CurseForge, ATLauncher, Prism, GDLauncher.
 
 ---
 
@@ -29,41 +27,28 @@ Paragraph 2
 
 ---
 
-**Bold**
+1) Item 1
+2) Item 2
+    i. Item 1
+    ii.Item 2
 
-*Italics*
+/// fancylists | type=a start=9
+1. item i
+1. item j
+///
 
-***Bold and italics***
+++ctrl+alt+delete++
 
-> Here is a blockquote which doesn't work with dracula
+=== "Tab 1"
+    Markdown **content**.
 
----
+    Multiple paragraphs.
 
-1. First item
-2. Second item
-3. Third item
-4. Fourth item
+=== "Tab 2"
+    More Markdown **content**.
 
-`this is a code block`
-
-```python
-print("Converting Fahrenheit to Celsius")
-
-name = input("Please enter your first name.")
-print("Thank you", name)
-
-fah = float(input("Please enter a temperature in Fahrenheit"))
-print("{0:.2f} in Fahrenheit is {1:.2f} in Celsius.".format(fah, (fah - 32) * 5 / 9))
-
-print("Thank you", name)
-print("Converting Celsius to Fahrenheit.")
-cel = float(input("Please enter a temperature in Celsius."))
-print("{0:.2f} in Celsius is {1:.2f} in Fahrenheit.".format(cel, (cel * (9 / 5)) + 32))
-
-print("\n")
-input("Press enter to exit")
-
-```
+    - list item a
+    - list item b
 
 ---
 
@@ -71,5 +56,29 @@ input("Press enter to exit")
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
+
+The HTML specification
+is maintained by the W3C.
+
+| Method      | Description                          |
+| ----------- | ------------------------------------ |
+| `GET`       | :material-check:     Fetch resource  |
+| `PUT`       | :material-check-all: Update resource |
+| `DELETE`    | :material-close:     Delete resource |
+
+*[HTML]: Hyper Text Markup Language
+*[W3C]:  World Wide Web Consortium
+
+$$
+\cos x=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}x^{2k}
+$$
+
+The homomorphism $f$ is injective if and only if its kernel is only the
+singleton set $e_G$, because otherwise $\exists a,b\in G$ with $a\neq b$ such
+that $f(a)=f(b)$.
+
+Here is some {--*incorrect*--} Markdown.  I am adding this{++ here++}.  Here is some more {--text
+ that I am removing--}text.  And here is even more {++text that I 
+ am ++}adding.
 
 > [GitHub](https://github.com/Catalyst-Studios) | [Discord](https://discord.gg/YCHPXeW9GZ)
