@@ -3,7 +3,7 @@ site_name: Catalyst Studios Guides
 repo_url: https://github.com/Catalyst-Studios/catalystguides
 repo_name: catalystguides
 edit_uri: edit/dev/docs/
-copyright: Test copyright Arc
+copyright: Catalyst Studios | Built by <a href='https://github.com/ArcTrooper210' class='arc'>ArcTrooper</a>
 strict: !ENV [ENABLE_STRICT, true]
 extra:
     social:
@@ -13,19 +13,22 @@ extra:
         - icon: fontawesome/brands/discord
           link: https://discord.gg/YCHPXeW9GZ
           name: Discord
+        - icon: fontawesome/brands/twitter
+          link: https://twitter.com/CatalystModpack
+          name: Twitter
 extra_css:
-    - stylesheets/extra.css
+    - assets/stylesheets/extra.css
 extra_javascript:
-    - javascripts/extra.js
-    - javascripts/tablesort.js
-    - javascripts/mathjax.js
+    - assets/javascripts/extra.js
+    - assets/javascripts/tablesort.js
+    - assets/javascripts/mathjax.js
     - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 theme:
     name: material
     locale: en
     custom_dir: overrides
-    logo: img/catyLogo.png
-    favicon: img/catyLogo.png
+    logo: assets/img/catyLogo.png
+    favicon: assets/img/catyLogo.png
     font: 
         text: Rajdhani
     icon:
@@ -67,6 +70,9 @@ plugins:
     - mkdocs-audio
     - autolinks # may adversely affect build times
     - open-in-new-tab
+    - meta-descriptions:
+        enabled: !ENV [META_DESCRIPTIONS, false]
+    - tags
     - git-revision-date-localized:
         type: timeago
         fallback_to_build_date: false

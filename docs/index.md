@@ -81,4 +81,4 @@ Here is some {--*incorrect*--} Markdown.  I am adding this{++ here++}.  Here is 
  that I am removing--}text.  And here is even more {++text that I 
  am ++}adding.
 
-> [GitHub](https://github.com/Catalyst-Studios) | [Discord](https://discord.gg/YCHPXeW9GZ)
+> Catalyst Studios | [GitHub](https://github.com/Catalyst-Studios) | [Discord](https://discord.gg/YCHPXeW9GZ)

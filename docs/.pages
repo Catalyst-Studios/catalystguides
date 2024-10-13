@@ -1,5 +1,6 @@
 nav:
  - Catalyst Guides:
    - Home: index.md
- - About: about.md
- - ...
+   - Evolution: evolution
+ - Contributing: contributing
+ - About: about

@@ -17,4 +17,5 @@ dependencies = [
 	"mkdocs-autorefs",
 	"mkdocs-awesome-pages-plugin",
 	"mkdocs-open-in-new-tab",
+	"mkdocs-meta-descriptions-plugin",
 ]
