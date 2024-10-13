@@ -72,7 +72,6 @@ plugins:
     - open-in-new-tab
     - meta-descriptions:
         enabled: !ENV [META_DESCRIPTIONS, false]
-    - tags
     - git-revision-date-localized:
         type: timeago
         fallback_to_build_date: false
@@ -83,13 +82,6 @@ plugins:
         repository: Catalyst-Studios/catalystguides
         branch: main
         enabled: !ENV [CI, false]
-        #show_contribution: true
-        #show_line_count: true
-        #show_email_address: false
-        #fallback_to_empty: true
-        #sort_authors_by: contribution
-        #enabled: !ENV [ENABLE_GIT_AUTHORS, false]
-        #strict: true
     - minify:
         minify_html: !ENV [ENABLE_MINIFY, false]
     - autorefs:
@@ -99,6 +91,7 @@ plugins:
     - glightbox:
         draggable: false
         auto_caption: true
+    - tags
 markdown_extensions:
     - abbr
     - admonition
