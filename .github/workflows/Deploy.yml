@@ -10,7 +10,7 @@ jobs:
       ENABLE_GIT_REVISION_DATE: true
       CI: true
       ENABLE_MINIFY: true
-      ENABLE_STRICT_GIT_REVISION_DATE: true
+      ENABLE_STRICT_CI: false
     steps:
       - uses: actions/checkout@v4
         with:
