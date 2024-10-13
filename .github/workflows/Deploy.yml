@@ -11,7 +11,7 @@ jobs:
       CI: true
       ENABLE_MINIFY: true
       ENABLE_STRICT_GIT_REVISION_DATE: true
-	 steps:
+    steps:
       - uses: actions/checkout@v4
         with:
           ref: main
@@ -21,7 +21,7 @@ jobs:
           enable-cache: true
           cache-dependency-glob: "uv.lock"
       - uses: actions/setup-python@v5
-	    with:
+        with:
           python-version: 3.x
       - run: uv sync
       - run: |
