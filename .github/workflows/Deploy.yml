@@ -4,7 +4,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-	env:
+    env:
       ENABLE_STRICT: true
       META_DESCRIPTIONS: true
       ENABLE_GIT_REVISION_DATE: true
