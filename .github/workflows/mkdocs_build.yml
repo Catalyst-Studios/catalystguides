@@ -1,0 +1,27 @@
+name: mkdocs_build
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [ opened, synchronize, reopened ]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      ENABLE_STRICT: true
+      META_DESCRIPTIONS: false
+      ENABLE_GIT_REVISION_DATE: false
+      CI: false
+      ENABLE_MINIFY: true
+      ENABLE_STRICT_GIT_REVISION_DATE: true
+      
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v2
+        with:
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+      - uses: actions/setup-python@v5
+      - run: uv sync
+      - run: uv run mkdocs build
