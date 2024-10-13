@@ -11,7 +11,7 @@ jobs:
       CI: true
       ENABLE_MINIFY: true
       ENABLE_STRICT_GIT_REVISION_DATE: true
-      MKDOCS_GIT_COMMITTERS_APIKEY : ${{ secrets.MKDOCS_GIT_COMMITTERS_APIKEY  }}
+      MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.MKDOCS_GIT_COMMITTERS_APIKEY  }}
     steps:
       - uses: actions/checkout@v4
         with:
