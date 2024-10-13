@@ -1,0 +1,30 @@
+name: Deploy to GHP
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+	env:
+      ENABLE_STRICT: true
+      META_DESCRIPTIONS: true
+      ENABLE_GIT_REVISION_DATE: true
+      CI: true
+      ENABLE_MINIFY: true
+      ENABLE_STRICT_GIT_REVISION_DATE: true
+	 steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v2
+        with:
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+      - uses: actions/setup-python@v5
+	    with:
+          python-version: 3.x
+      - run: uv sync
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+      - run: uv run mkdocs gh-deploy
