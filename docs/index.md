@@ -1,18 +1,18 @@
-# Welcome to Catalyst Studios
+# Welcome!
 
-Heading 1
+To the all new Catalyst Studios guides site!
 
-## H2
+We are a community hub where pack makers and collaborators can host their projects under one roof while also having our own flagship packs launched alongside them!
 
-Heading 2
+Here you'll find guides for our main modpacks such as modPackName, modPackName, and modPackname!
 
-### H3
+## Pack Requirements
 
-Heading 3
+a
 
-#### H4
+## Launchers
 
-Heading 4
+CurseForge, ATLauncher, Prism, GDLauncher.
 
 ---
 
@@ -27,35 +27,28 @@ Paragraph 2
 
 ---
 
-**Bold**
+1) Item 1
+2) Item 2
+    i. Item 1
+    ii.Item 2
 
-*Italics*
+/// fancylists | type=a start=9
+1. item i
+1. item j
+///
 
-***Bold and italics***
+++ctrl+alt+delete++
 
-> Here is a blockquote which doesn't work with dracula
+=== "Tab 1"
+    Markdown **content**.
 
----
+    Multiple paragraphs.
 
-1. First item
-2. Second item
-3. Third item
-4. Fourth item
+=== "Tab 2"
+    More Markdown **content**.
 
----
-
-- First item
-- Second item
-- Third item
-- Fourth item
-
-`this is a code block`
-
-```
-multiline 
-code 
-block
-```
+    - list item a
+    - list item b
 
 ---
 
@@ -64,4 +57,28 @@ block
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 
+The HTML specification
+is maintained by the W3C.
 
+| Method      | Description                          |
+| ----------- | ------------------------------------ |
+| `GET`       | :material-check:     Fetch resource  |
+| `PUT`       | :material-check-all: Update resource |
+| `DELETE`    | :material-close:     Delete resource |
+
+*[HTML]: Hyper Text Markup Language
+*[W3C]:  World Wide Web Consortium
+
+$$
+\cos x=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}x^{2k}
+$$
+
+The homomorphism $f$ is injective if and only if its kernel is only the
+singleton set $e_G$, because otherwise $\exists a,b\in G$ with $a\neq b$ such
+that $f(a)=f(b)$.
+
+Here is some {--*incorrect*--} Markdown.  I am adding this{++ here++}.  Here is some more {--text
+ that I am removing--}text.  And here is even more {++text that I 
+ am ++}adding.
+
+> Catalyst Studios | [GitHub](https://github.com/Catalyst-Studios) | [Discord](https://discord.gg/YCHPXeW9GZ)

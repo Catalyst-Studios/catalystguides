@@ -11,10 +11,11 @@ dependencies = [
 	"mkdocs-video",
 	"mkdocs-audio",
 	"mkdocs-git-revision-date-localized-plugin",
-	"mkdocs-git-authors-plugin",
+	"mkdocs-git-committers-plugin-2",
 	"mkdocs-minify-plugin",
 	"mkdocs-autolinks-plugin",
 	"mkdocs-autorefs",
 	"mkdocs-awesome-pages-plugin",
 	"mkdocs-open-in-new-tab",
+	"mkdocs-meta-descriptions-plugin",
 ]
