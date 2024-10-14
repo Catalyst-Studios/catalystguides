@@ -1,6 +1,6 @@
 .venv
 site/*
-.cache
+.cache/*
 workspace.code-workspace
 .vscode/*
 .idea
