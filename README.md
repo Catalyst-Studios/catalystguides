@@ -5,7 +5,7 @@
 
 ![](https://img.shields.io/github/issues-pr/Catalyst-Studios/catalystguides.svg) ![](https://img.shields.io/github/issues/Catalyst-Studios/catalystguides.svg)
 
-![](https://github.com/Catalyst-Studios/catalystguides/actions/workflows/WORKFLOW-FILE/badge.svg) ![](https://github.com/Catalyst-Studios/catalystguides/actions/workflows/WORKFLOW-FILE/badge.svg)
+![](https://github.com/Catalyst-Studios/catalystguides/actions/workflows/mkdocs_build.yml/badge.svg) ![](https://github.com/Catalyst-Studios/catalystguides/actions/workflows/Deploy.yml/badge.svg)
 
 Welcome to the all new Catalyst Guides! This site will host all the guides pertaining to the Catalyst Studios modpacks and community!
 
