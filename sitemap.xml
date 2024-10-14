@@ -1,3 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://catalyst-studios.github.io/catalystguides/</loc>
+         <lastmod>2024-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://catalyst-studios.github.io/catalystguides/about/</loc>
+         <lastmod>2024-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://catalyst-studios.github.io/catalystguides/contributing/</loc>
+         <lastmod>2024-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://catalyst-studios.github.io/catalystguides/contributing/contributing/</loc>
+         <lastmod>2024-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://catalyst-studios.github.io/catalystguides/evolution/</loc>
+         <lastmod>2024-10-14</lastmod>
+    </url>
 </urlset>
