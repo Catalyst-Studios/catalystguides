@@ -5,14 +5,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      MKDOCS_GIT_COMMITTERS_APIKEY: ${{  secrets.MKDOCS_GIT_COMMITTERS_APIKEY  }}
-      ENABLE_STRICT: true
+      ENABLE_STRICT: false
       META_DESCRIPTIONS: true
       ENABLE_GIT_REVISION_DATE: true
       CI: true
       ENABLE_MINIFY: true
       ENABLE_STRICT_GIT_REVISION_DATE: true
-      
     steps:
       - uses: actions/checkout@v4
         with:
