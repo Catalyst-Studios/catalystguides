@@ -11,36 +11,36 @@
 </h2>
 
 <h3 align="center">
-  <a href="https://github.com/Catalyst-Studios/catalystguides/actions/workflows/mkdocs_build.yml "target="_blank">
+  <a href="https://github.com/Catalyst-Studios/catalystguides/actions/workflows/mkdocs_build.yml>
     <img src="https://github.com/Catalyst-Studios/catalystguides/actions/workflows/mkdocs_build.yml/badge.svg">
   </a>
-  <a href="https://github.com/Catalyst-Studios/catalystguides/actions/workflows/Deploy.yml" "target="_blank">
+  <a href="https://github.com/Catalyst-Studios/catalystguides/actions/workflows/Deploy.yml">
     <img src="https://github.com/Catalyst-Studios/catalystguides/actions/workflows/Deploy.yml/badge.svg">
   </a>
-  <a href="https://github.com/Catalyst-Studios/catalystguides/issues" "target="_blank">
+  <a href="https://github.com/Catalyst-Studios/catalystguides/issues">
     <img src="https://img.shields.io/github/issues-pr/Catalyst-Studios/catalystguides.svg">
   </a>
-  <a href="https://github.com/Catalyst-Studios/catalystguides/pulls" "target="_blank">
+  <a href="https://github.com/Catalyst-Studios/catalystguides/pulls">
     <img src="https://img.shields.io/github/issues/Catalyst-Studios/catalystguides.svg">
   </a>
 </br>
-  <a href="https://legacy.curseforge.com/members/catalyststudios/projects" "target="_blank">
+  <a href="https://legacy.curseforge.com/members/catalyststudios/projects">
     <img src="https://cf.way2muchnoise.eu/author/CatalystStudios.svg">
   </a>
-  <a href="https://discord.gg/YCHPXeW9GZ" "target="_blank">
+  <a href="https://discord.gg/YCHPXeW9GZ">
     <img src="https://img.shields.io/discord/1131757660253995029?label=Discord&color=5865F2">
   </a>
-  <a href="https://twitter.com/CatalystModpack" "target="_blank">
+  <a href="https://twitter.com/CatalystModpack">
     <img src="https://img.shields.io/twitter/follow/CatalystModpack?style=social">
   </a>
 </h3>
 
 ## Contributing
 
-The majority of the Catalyst Guides are community contributed. We highly appreciate any contributions. Whether you are helping us create new guides, improving our current ones, or spreading the word - we would love to have you as a part of the Catalyst community! Please refer to our <a href="https://catalyst-studios.github.io/catalystguides/contributing/contributing/" target="_blank">contribution guide</a> and [code of conduct](./CODE_OF_CONDUCT.md).
+The majority of the Catalyst Guides are community contributed. We highly appreciate any contributions. Whether you are helping us create new guides, improving our current ones, or spreading the word - we would love to have you as a part of the Catalyst community! Please refer to our <a href="https://catalyst-studios.github.io/catalystguides/contributing/contributing/">contribution guide</a> and [code of conduct](./CODE_OF_CONDUCT.md).
 
 - Bug Report: If you see an error in the guides contents or encounter an issue while using Catalyst Guides, please create a [bug report](https://github.com/Catalyst-Studios/catalystguides/issues/new).
 
 Not sure where to start? Join our Discord and we will help you get started!
 
-<a href="https://discord.gg/YCHPXeW9GZ" "target="_blank"><img src="./.github/assets/join-our-discord!.svg"></a>
+<a href="https://discord.gg/YCHPXeW9GZ"><img src="./.github/assets/join-our-discord!.svg"></a>
