@@ -11,7 +11,7 @@
 </h2>
 
 <h3 align="center">
-  <a href="https://github.com/Catalyst-Studios/catalystguides/actions/workflows/mkdocs_build.yml>
+  <a href="https://github.com/Catalyst-Studios/catalystguides/actions/workflows/mkdocs_build.yml">
     <img src="https://github.com/Catalyst-Studios/catalystguides/actions/workflows/mkdocs_build.yml/badge.svg">
   </a>
   <a href="https://github.com/Catalyst-Studios/catalystguides/actions/workflows/Deploy.yml">
