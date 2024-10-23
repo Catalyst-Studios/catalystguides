@@ -1,6 +1,6 @@
 nav:
- - Catalyst Guides:
+ - <b>Catalyst Guides</b>:
    - Home: index.md
-   - Evolution: evolution
- - Contributing: contributing
+   - Little Bit Large: littlebitlarge
+ - Contributing: guides
  - About: about

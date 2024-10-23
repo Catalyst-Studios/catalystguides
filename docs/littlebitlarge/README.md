@@ -1,6 +1,11 @@
-# Catalyst Evolution
+---
+title: Little Bit Large
+description: The Little Bit Large about page!
+---
 
-The **Evolution pack** sets out to do what every kitchen sink should be doing, but has recently *failed* to achieve; to take you from the start to end of a Minecraft version with new content added regularly, ensuring you're playing a modpack centered around quality, stability, and multiplayer-based playthroughs. 
+# Little Bit Large
+
+The **Little Bit Large pack** sets out to do what every kitchen sink should be doing, but has recently *failed* to achieve; to take you from the start to end of a Minecraft version with new content added regularly, ensuring you're playing a modpack centered around quality, stability, and multiplayer-based playthroughs. 
 
 There will be some custom content in this pack alongside popular mods we all know and love, without gating you unnecessarily along the way.
 
@@ -8,4 +13,4 @@ Refamiliarise yourself with mods such as **Mystical Agriculture**, **Applied Ene
 
 World generation should always be kept simple, yet feel fun to explore and traverse through, which is why we have gone with the fan favourite of **Biomes o' Plenty**. By sticking with one world generation mod, we can offer a clean, efficient world that will not lag you out when your friends explore deeper into the world. This reiterates our commitment to a quality modpack perfect for playing with friends.
 
-> Evolution 1 | [CurseForge](https://legacy.curseforge.com/minecraft/modpacks/the-evolution-pack) | [GitHub](https://github.com/Catalyst-Studios/MC-Evolution)
+> Little Bit Large | [CurseForge](https://legacy.curseforge.com/minecraft/modpacks/the-evolution-pack) | [GitHub](https://github.com/Catalyst-Studios/MC-Evolution)

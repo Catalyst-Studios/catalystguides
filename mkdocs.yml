@@ -51,16 +51,15 @@ theme:
     palette:
         - media: "(prefers-color-scheme: light)"
           scheme: default 
-          #primary: custom
-          #accent: custom
+          primary: custom
           toggle:
             icon: material/weather-sunny
             name: Switch to dark mode
 
         - media: "(prefers-color-scheme: dark)"
           scheme: slate
-          #primary: custom
-          #accent: custom
+          primary: custom
+          accent: custom
           toggle:
             icon: material/weather-night
             name: Switch to light mode
@@ -78,10 +77,12 @@ plugins:
         enable_creation_date: true
         enabled: !ENV [ENABLED_GIT_REVISION_DATE, false]
         strict: true
-    - git-committers:
-        repository: Catalyst-Studios/catalystguides
-        branch: main
-        enabled: !ENV [CI, false]
+    - git-authors:
+        show_contribution: true
+        show_email_address: false
+        sort_authors_by: contribution
+        enabled: !ENV [ENABLED_GIT_AUTHORS, false]
+        strict: !ENV [ENABLE_STRICT_GIT_AUTHORS, false]
     - minify:
         minify_html: !ENV [ENABLE_MINIFY, false]
     - autorefs:
@@ -109,7 +110,6 @@ markdown_extensions:
         line_spans: __span
     - pymdownx.arithmatex:
         generic: true
-    - pymdownx.betterem
     - pymdownx.caret
     - pymdownx.mark
     - pymdownx.tilde
