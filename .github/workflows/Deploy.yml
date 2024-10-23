@@ -1,4 +1,10 @@
 name: Deploy to GHP
+permissions:
+  deployments: write
+  contents: write
+  statuses: write
+  actions: write
+  checks: read
 on:
   workflow_dispatch:
 jobs:
