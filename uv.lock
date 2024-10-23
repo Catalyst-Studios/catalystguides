@@ -41,7 +41,7 @@ dependencies = [
     { name = "mkdocs-autolinks-plugin" },
     { name = "mkdocs-autorefs" },
     { name = "mkdocs-awesome-pages-plugin" },
-    { name = "mkdocs-git-committers-plugin-2" },
+    { name = "mkdocs-git-authors-plugin" },
     { name = "mkdocs-git-revision-date-localized-plugin" },
     { name = "mkdocs-glightbox" },
     { name = "mkdocs-material" },
@@ -58,7 +58,7 @@ requires-dist = [
     { name = "mkdocs-autolinks-plugin" },
     { name = "mkdocs-autorefs" },
     { name = "mkdocs-awesome-pages-plugin" },
-    { name = "mkdocs-git-committers-plugin-2" },
+    { name = "mkdocs-git-authors-plugin" },
     { name = "mkdocs-git-revision-date-localized-plugin" },
     { name = "mkdocs-glightbox" },
     { name = "mkdocs-material" },
@@ -369,17 +369,15 @@ wheels = [
 ]
 
 [[package]]
-name = "mkdocs-git-committers-plugin-2"
-version = "2.4.1"
+name = "mkdocs-git-authors-plugin"
+version = "0.9.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "gitpython" },
     { name = "mkdocs" },
-    { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/36/4a/783d1c2683bc577bfe875646ce68bc9e0d845d0817a96f2a057033fdc64e/mkdocs_git_committers_plugin_2-2.4.1.tar.gz", hash = "sha256:ea1f80a79cedc42289e0b8e973276df04fb94f56e0ae3efc5385fb28547cf5cb", size = 14924 }
+sdist = { url = "https://files.pythonhosted.org/packages/ac/03/99e18d62964d268eb9a866f42c9d53b43cde903a7fb436da85e396945a02/mkdocs_git_authors_plugin-0.9.0.tar.gz", hash = "sha256:6161f63b87064481a48d9ad01c23e43c3e758930c3a9cc167fe482909ceb9eac", size = 20268 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7d/a7/1f5ea492f6b441fa84157608608a8d211bea322ecc0957e738b83e22cb0c/mkdocs_git_committers_plugin_2-2.4.1-py3-none-any.whl", hash = "sha256:ec9c1d81445606c471337d1c4a1782c643b7377077b545279dc18b86b7362c6d", size = 11614 },
+    { url = "https://files.pythonhosted.org/packages/46/ad/a6e0ce34a1d9abe35844cdc3a64028d3df7bfe24b143021f7fcaa26adfdd/mkdocs_git_authors_plugin-0.9.0-py3-none-any.whl", hash = "sha256:380730a05eeb947a7e84be05fdb1c5ae2a7bc70fd9f6eda941f187c87ae37052", size = 19204 },
 ]
 
 [[package]]
