@@ -44,3 +44,5 @@ The majority of the Catalyst Guides are community contributed. We highly appreci
 Not sure where to start? Join our Discord and we will help you get started!
 
 <a href="https://discord.gg/YCHPXeW9GZ"><img src="./.github/assets/join-our-discord!.svg"></a>
+
+<p>Extra text to allow comparison!</p>
