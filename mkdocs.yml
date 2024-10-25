@@ -2,7 +2,7 @@ site_name: Catalyst Studios Guides
 site_url: https://catalyst-studios.github.io/catalystguides/
 repo_url: https://github.com/Catalyst-Studios/catalystguides/
 repo_name: catalystguides
-edit_uri: edit/dev/docs/
+edit_uri: edit/main/docs/
 copyright: Catalyst Studios | Built by <a href='https://github.com/ArcTrooper210' class='arc'>ArcTrooper</a>
 strict: !ENV [ENABLE_STRICT, true]
 extra:
@@ -80,11 +80,15 @@ plugins:
     - git-authors:
         show_contribution: true
         show_email_address: false
+        fallback_to_empty: true
         sort_authors_by: contribution
         enabled: !ENV [ENABLED_GIT_AUTHORS, false]
         strict: !ENV [ENABLE_STRICT_GIT_AUTHORS, false]
     - minify:
         minify_html: !ENV [ENABLE_MINIFY, false]
+        minify_js: !ENV [ENABLE_MINIFY, false]
+        minify_css: !ENV [ENABLE_MINIFY, false]
+        cache_safe: true
     - autorefs:
         resolve_closest: true
     - awesome-pages:
