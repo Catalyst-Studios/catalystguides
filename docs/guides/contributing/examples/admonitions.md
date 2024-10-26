@@ -1,6 +1,7 @@
 ---
 title: Admonitions
 description: Examples of all admonitions!
+icon: material/alert-outline
 ---
 
 # Admonitions

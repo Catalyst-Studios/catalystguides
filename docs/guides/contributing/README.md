@@ -240,18 +240,18 @@ If you have any question, feel free to [join the Discord](https://discord.gg/YCH
     - You likely put a ++tab++ indent in your list of authors.
     - Remember, only use a single space when indenting
     
-    `![](img/faqHeader.png){style='border: 1px solid orange'}`
+    `![](img/faqHeader.png)`
 
 ??? question "My authors are being spelled out letter by letter."
     - You didn't put a space after the hyphen and before the author name.
     - It is `- authorName`, not `-authorName`
     
-    `![](img/faqAuthor.png){style='border: 1px solid orange'}`
+    `![](img/faqAuthor.png)`
     
 ??? question "My locally hosted preview won't refresh with changes."
     - Check your PowerShell console output and see if it produces any `warning` or `error`. It will tell you exactly what is wrong.
     - Most likely, you have a misspelled file name or you have the incorrect path to an image.
     
-    `![](img/faqWarning.png){style='border: 1px solid orange'}`
+    `![](img/faqWarning.png)`
 
 > Catalyst Guides | [GitHub](https://github.com/Catalyst-Studios/catalystguides) | [Discord](https://discord.gg/YCHPXeW9GZ)
