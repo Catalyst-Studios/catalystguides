@@ -1,14 +1,20 @@
 name: Deploy to GHP
+permissions:
+  deployments: write
+  contents: write
+  statuses: write
+  actions: write
+  checks: read
 on:
   workflow_dispatch:
 jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      ENABLE_STRICT: false
+      ENABLE_STRICT: true
       META_DESCRIPTIONS: true
       ENABLE_GIT_REVISION_DATE: true
-      ENABLE_GIT_COMMITTERS: true
+      ENABLE_GIT_AUTHORS: true
       ENABLE_MINIFY: true
       ENABLE_STRICT_GIT_REVISION_DATE: true
     steps:
