@@ -20,6 +20,15 @@ body > header {
   border-bottom: 1px solid #ffa831;
 }
 
+code {
+  text-wrap: wrap;
+}
+
+hr {
+  border-bottom: 1px solid #bebebeb2;
+  margin: 16px 0;
+}
+
 .md-copyright__highlight {
   font-size: 15px;
   font-weight: 800;

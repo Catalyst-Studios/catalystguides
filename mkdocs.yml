@@ -39,7 +39,6 @@ theme:
         - navigation.tracking
         - navigation.tabs
         - navigation.tabs.sticky
-        - navigation.path
         - navigation.indexes
         - toc.follow
         - navigation.top
@@ -48,6 +47,7 @@ theme:
         - content.action.edit
         - content.tooltips
         - content.footnote.tooltips
+        - content.code.copy
     palette:
         - media: "(prefers-color-scheme: light)"
           scheme: default 
@@ -82,7 +82,7 @@ plugins:
         show_email_address: false
         fallback_to_empty: true
         sort_authors_by: contribution
-        enabled: !ENV [ENABLED_GIT_AUTHORS, false]
+        enabled: !ENV [ENABLED_GIT_AUTHORS, true]
         strict: !ENV [ENABLE_STRICT_GIT_AUTHORS, false]
     - minify:
         minify_html: !ENV [ENABLE_MINIFY, false]
@@ -111,7 +111,9 @@ markdown_extensions:
     - pymdownx.details
     - pymdownx.superfences
     - pymdownx.highlight:
+        anchor_linenums: true
         line_spans: __span
+        pygments_lang_class: true
     - pymdownx.arithmatex:
         generic: true
     - pymdownx.caret
