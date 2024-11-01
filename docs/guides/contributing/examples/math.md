@@ -10,9 +10,7 @@ Catalyst Guides uses [MathJax](https://www.mathjax.org) to render math equations
 
 You can use [AsciiMath](https://asciimath.org) to generate math equations, syntax is available at the bottom of the page.
 
-For the plugin to detect a math equation the `$` must be followed by a non-whitespace character and the closing `$` must be preceded by a non-whitespace character.
-
-This prevents the false positives when using the dollar sign in traditional ways like: *I owe Bob $10 and Sally $5*.
+For the plugin to detect a math equation the `$` must be followed by a non-whitespace character and the closing `$` must be preceded by a non-whitespace character. This prevents the false positives when using the dollar sign in traditional ways like: *I owe Bob $10 and Sally $5*.
 
 ---
 
