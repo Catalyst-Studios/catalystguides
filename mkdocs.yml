@@ -3,7 +3,7 @@ site_url: https://catalyst-studios.github.io/catalystguides/
 repo_url: https://github.com/Catalyst-Studios/catalystguides/
 repo_name: catalystguides
 edit_uri: edit/main/docs/
-copyright: Catalyst Studios | Built by <a href='https://github.com/ArcTrooper210' class='arc'>ArcTrooper</a>
+copyright: Catalyst Studios™ | Built by <a href='https://github.com/ArcTrooper210' class='arc'>ArcTrooper</a>
 strict: !ENV [ENABLE_STRICT, true]
 extra:
     social:
@@ -30,7 +30,7 @@ theme:
     logo: assets/img/catyLogo.png
     favicon: assets/img/catyLogo.png
     font: 
-        text: Rajdhani
+        text: Exo 2
     icon:
         repo: fontawesome/brands/github
         edit: material/pencil
@@ -38,7 +38,6 @@ theme:
         - navigation.instant
         - navigation.tracking
         - navigation.tabs
-        - navigation.tabs.sticky
         - navigation.indexes
         - toc.follow
         - navigation.top
@@ -49,13 +48,6 @@ theme:
         - content.footnote.tooltips
         - content.code.copy
     palette:
-        - media: "(prefers-color-scheme: light)"
-          scheme: default 
-          primary: custom
-          toggle:
-            icon: material/weather-sunny
-            name: Switch to dark mode
-
         - media: "(prefers-color-scheme: dark)"
           scheme: slate
           primary: custom
@@ -63,6 +55,14 @@ theme:
           toggle:
             icon: material/weather-night
             name: Switch to light mode
+        
+        - media: "(prefers-color-scheme: light)"
+          scheme: default 
+          primary: custom
+          toggle:
+            icon: material/weather-sunny
+            name: Switch to dark mode
+
 plugins:
     - search
     - mkdocs-video
@@ -82,7 +82,7 @@ plugins:
         show_email_address: false
         fallback_to_empty: true
         sort_authors_by: contribution
-        enabled: !ENV [ENABLED_GIT_AUTHORS, true]
+        enabled: !ENV [ENABLED_GIT_AUTHORS, false]
         strict: !ENV [ENABLE_STRICT_GIT_AUTHORS, false]
     - minify:
         minify_html: !ENV [ENABLE_MINIFY, false]

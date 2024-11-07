@@ -15,7 +15,6 @@ Admonitions follow a simple syntax: `!!!` followed by a [type qualifier](#admoni
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod 
     nulla. Curabitur feugiat, tortor non consequat finibus.
 ```
-
 <div class="result" markdown>
 !!! question
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus.
@@ -31,7 +30,6 @@ You can change the title by adding a quoted string. You can use Markdown in your
 !!! tip "Whatever Title You Want"
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ```
-
 <div class="result" markdown>
 !!! tip "Whatever Title You Want"
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -47,7 +45,6 @@ You can completely remove the title and only render an outline by adding an empt
 !!! example ""
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ```
-
 <div class="result" markdown>
 !!! example ""
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -63,7 +60,6 @@ You can have a collapsible block using `???`.
 ??? note
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ```
-
 <div class="result" markdown>
 ??? note
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -75,12 +71,71 @@ You can also force the expansion of the block using `???+`
 ???+ note
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ```
-
 <div class="result" markdown>
 ???+ note
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 </div>
 
+---
+
+### Nestable Admonitions
+
+You can add admonitions that are nested inside of each other.
+
+???+ ghdesk
+    ???+ vsc
+        ??? note
+            ??? abstract
+                ??? info
+                    ??? tip
+                        ??? success
+                            ??? question
+                                ??? warning
+                                    ??? failure
+                                        ??? danger
+                                            ??? bug
+                                                ??? example
+                                                    [Click me!](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+---
+
+### Inline Blocks
+
+=== ":octicons-arrow-right-16: inline end"
+    !!! info inline end "Admonition on the Right"
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+    ``` markdown
+    !!! info inline end "Admonition on the Right"
+
+        Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Nulla et euismod nulla.
+        Curabitur feugiat, tortor non consequat
+        finibus, justo purus auctor massa, nec
+        semper lorem quam in massa.
+    ```
+    You can place admonitions as inline blocks on the right using `inline end` or left using `inline`.
+
+=== ":octicons-arrow-left-16: inline"
+    !!! info inline "Admonition on the Left"
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+    ``` markdown
+    !!! info inline "Admonition on the Left"
+
+        Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Nulla et euismod nulla.
+        Curabitur feugiat, tortor non consequat
+        finibus, justo purus auctor massa, nec
+        semper lorem quam in massa.
+    ```
+    You can place admonitions as inline blocks on the right using `inline end` or left using `inline`.
 
 ---
 
@@ -162,12 +217,11 @@ You can also force the expansion of the block using `???+`
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
 
 ### GHDesk
-```
+
 ??? ghdesk
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
-```
+
 ### VSC
-```
+
 ??? vsc
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
-```

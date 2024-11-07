@@ -54,9 +54,7 @@ Fork the [Catalyst Guides](https://github.com/Catalyst-Studios/catalystguides/fo
 
 Now you'll want to **Clone** your forked repository using your preferred program.
 
-<!--- Make custom admonitions for GHD and VSC. --->
-
-??? info "GitHub Desktop"
+??? ghdesk "GitHub Desktop"
     Go to `File` :material-arrow-right-thin: `Clone repository...` OR do `Ctrl+Shift+O` and select your Catalyst Guides fork. (I put `_arc` for my own sorting purposes)
 
     ![](img/cloneGHDesktopLight.png#only-light){.center width='400px'}
@@ -66,7 +64,7 @@ Now you'll want to **Clone** your forked repository using your preferred program
 
     !!! question "Need help? Check out [GitHub Desktop's official docs!](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop#cloning-a-repository)"
 
-??? info "Visual Studio Code"
+??? vsc "Visual Studio Code"
     1. Go to your Catalyst Guides fork and click `<> Code` and copy the **HTML link**.
     ![](img/cloneVSCLight1.png#only-light){.center width='400px'}
     ![](img/cloneVSCDark1.png#only-dark){.center width='400px'}
@@ -213,7 +211,7 @@ All changes made will be selected by default, if you do not want to commit some 
 
 When you submit a PR, you're requesting us to **Pull** changes from your repository to ours and then deployed on the [live Catalyst Guides site](https://catalyst-studios.github.io/catalystguides/).
 
-After making your [Commit](#making-a-commit), go to your [fork of Catalyst Guides](https://github.com/Catalyst-Studios/catalystguides/forks) on GitHub and you'll see a yellow banner with a buttom that says `Compare & pull request`.
+After making your [Commit](#making-a-commit), go to your [fork of Catalyst Guides](https://github.com/Catalyst-Studios/catalystguides/forks) on GitHub and you'll see a yellow banner with a button that says `Compare & pull request`.
 
 Click it, then add a `Title` and what you've changed in the `Description`, then click `Create pull request`.
 
