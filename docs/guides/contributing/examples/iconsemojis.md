@@ -6,4 +6,7 @@ icon: material/emoticon
 
 # Icons and Emojis
 
-a
+- :material-material-design: – [Material Design](https://pictogrammers.com/library/mdi/)
+- :fontawesome-brands-font-awesome: – [FontAwesome]
+- :octicons-mark-github-16: – [Octicons]
+- :simple-simpleicons: – [Simple Icons]
