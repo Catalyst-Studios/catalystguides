@@ -2,8 +2,8 @@ site_name: Catalyst Studios Guides
 site_url: https://catalyst-studios.github.io/catalystguides/
 repo_url: https://github.com/Catalyst-Studios/catalystguides/
 repo_name: catalystguides
-edit_uri: edit/dev/docs/
-copyright: Catalyst Studios | Built by <a href='https://github.com/ArcTrooper210' class='arc'>ArcTrooper</a>
+edit_uri: edit/main/docs/
+copyright: Catalyst Studios™ | Built by <a href='https://github.com/ArcTrooper210' class='arc'>ArcTrooper</a>
 strict: !ENV [ENABLE_STRICT, true]
 extra:
     social:
@@ -30,7 +30,7 @@ theme:
     logo: assets/img/catyLogo.png
     favicon: assets/img/catyLogo.png
     font: 
-        text: Rajdhani
+        text: Exo 2
     icon:
         repo: fontawesome/brands/github
         edit: material/pencil
@@ -38,8 +38,6 @@ theme:
         - navigation.instant
         - navigation.tracking
         - navigation.tabs
-        - navigation.tabs.sticky
-        - navigation.path
         - navigation.indexes
         - toc.follow
         - navigation.top
@@ -48,14 +46,8 @@ theme:
         - content.action.edit
         - content.tooltips
         - content.footnote.tooltips
+        - content.code.copy
     palette:
-        - media: "(prefers-color-scheme: light)"
-          scheme: default 
-          primary: custom
-          toggle:
-            icon: material/weather-sunny
-            name: Switch to dark mode
-
         - media: "(prefers-color-scheme: dark)"
           scheme: slate
           primary: custom
@@ -63,11 +55,18 @@ theme:
           toggle:
             icon: material/weather-night
             name: Switch to light mode
+        
+        - media: "(prefers-color-scheme: light)"
+          scheme: default 
+          primary: custom
+          toggle:
+            icon: material/weather-sunny
+            name: Switch to dark mode
+
 plugins:
     - search
     - mkdocs-video
     - mkdocs-audio
-    - autolinks # may adversely affect build times
     - open-in-new-tab
     - meta-descriptions:
         enabled: !ENV [META_DESCRIPTIONS, false]
@@ -80,11 +79,15 @@ plugins:
     - git-authors:
         show_contribution: true
         show_email_address: false
+        fallback_to_empty: true
         sort_authors_by: contribution
         enabled: !ENV [ENABLED_GIT_AUTHORS, false]
         strict: !ENV [ENABLE_STRICT_GIT_AUTHORS, false]
     - minify:
         minify_html: !ENV [ENABLE_MINIFY, false]
+        minify_js: !ENV [ENABLE_MINIFY, false]
+        minify_css: !ENV [ENABLE_MINIFY, false]
+        cache_safe: true
     - autorefs:
         resolve_closest: true
     - awesome-pages:
@@ -107,7 +110,9 @@ markdown_extensions:
     - pymdownx.details
     - pymdownx.superfences
     - pymdownx.highlight:
+        anchor_linenums: true
         line_spans: __span
+        pygments_lang_class: true
     - pymdownx.arithmatex:
         generic: true
     - pymdownx.caret
@@ -121,6 +126,9 @@ markdown_extensions:
     - pymdownx.keys
     - pymdownx.tabbed:
         alternate_style: true
+        slugify: !!python/object/apply:pymdownx.slugs.slugify
+            kwds:
+                case: lower
     - pymdownx.tasklist:
         custom_checkbox: true
         clickable_checkbox: true
