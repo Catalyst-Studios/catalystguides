@@ -17,10 +17,10 @@
   <a href="https://github.com/Catalyst-Studios/catalystguides/actions/workflows/Deploy.yml">
     <img src="https://github.com/Catalyst-Studios/catalystguides/actions/workflows/Deploy.yml/badge.svg">
   </a>
-  <a href="https://github.com/Catalyst-Studios/catalystguides/issues">
+  <a href="https://github.com/Catalyst-Studios/catalystguides/pulls">
     <img src="https://img.shields.io/github/issues-pr/Catalyst-Studios/catalystguides.svg">
   </a>
-  <a href="https://github.com/Catalyst-Studios/catalystguides/pulls">
+  <a href="https://github.com/Catalyst-Studios/catalystguides/issues">
     <img src="https://img.shields.io/github/issues/Catalyst-Studios/catalystguides.svg">
   </a>
 </br>
