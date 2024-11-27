@@ -8,34 +8,54 @@ icon: material/format-list-bulleted
 
 ## Unordered Lists
 
-a
+```
+- First item
+- Second item
+- Third item
+```
+<div class="result" markdown>
+- First item
+- Second item
+- Third item
+</div>
 
 ## Ordered Lists
 
-a
+Ordered lists can be numeral, roman numeral, or alphabetical.
 
 ```
 1)  Item 1
 2)  Item 2
-    i.  Item 1
-    ii. Item 2
-        a.  Item a
-        b.  Item b
+
+i.  Item 1
+ii. Item 2
+
+a.  Item a
+b.  Item b
 ```
 <div class="result" markdown>
 1)  Item 1
 2)  Item 2
-    i.  Item 1
-    ii. Item 2
-        a.  Item a
-        b.  Item b
+
+i.  Item 1
+ii. Item 2
+
+a.  Item a
+b.  Item b
 </div>
 
 ---
 
 ### Custom Ordered Lists
 
-You can also create custom ordered lists.
+You can also create custom ordered lists by surrounding a numbered list with :
+
+```
+/// fancylists | type=listTypeName start=startPosition
+1. List item
+2. List item
+///
+```
 
 | List Type Name | Value |
 | -------------- | ----- |
@@ -45,37 +65,49 @@ You can also create custom ordered lists.
 | Lowercase Roman Numeral | i |
 | Uppercase Roman Numeral | I |
 
-```
+```title="A lowercase alphabetical list that starts on the 9th letter of the alphabet"
 /// fancylists | type=a start=9
-1. item i
-2. item j
+1. Item i
+2. Item j
 ///
 ```
-
 <div class="result" markdown>
 /// fancylists | type=a start=9
-1. item i
-2. item j
+1. Item i
+2. Item j
 ///
 </div>
 
 ---
 
+#### Different Nested Lists
+
+```title="Number to roman numeral"
 1) Item 1
 2) Item 2
     i. Item 1
     ii. Item 2
+```
+<div class="result" markdown>
+1) Item 1
+2) Item 2
+    i. Item 1
+    ii. Item 2
+</div>
 
----
+```title="Unordered to ordered"
 -   Item 1
 -   Item 2
 1.  Item 1
 2.  Item 2
----
+```
+<div class="result" markdown>
+-   Item 1
+-   Item 2
 1.  Item 1
 2.  Item 2
-3)  Item 1
-4)  Item 2
+</div>
+
 ---
 
 ## Definition Lists
@@ -114,6 +146,8 @@ often extreme position or attitude.
     > He has remained *intransigent*, refusing all 
     suggestions for improvement of the project.
 </div>
+
+---
 
 ## Task Lists
 

@@ -25,6 +25,8 @@ Data tables can be used at any position in your project documentation and can co
 | `DELETE`    | :material-close:     Delete resource |
 </div>
 
+---
+
 ### Column alignment
 
 If you want to align a specific column to the `left`, `center` or `right`, you can place `:` characters at the beginning and/or end of the divider.

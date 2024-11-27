@@ -57,6 +57,8 @@ The most common use of content tabs is to group together code blocks.
     ```
 </div>
 
+---
+
 ## Grouping Other Content
 
 You can pretty much put whatever content you want inside a content tab!
@@ -91,6 +93,8 @@ You can pretty much put whatever content you want inside a content tab!
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod 
     nulla. Curabitur feugiat, tortor non consequat finibus.
 </div>
+
+---
 
 ## Embedded Content
 

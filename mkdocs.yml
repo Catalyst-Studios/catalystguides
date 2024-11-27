@@ -67,7 +67,6 @@ plugins:
     - search
     - mkdocs-video
     - mkdocs-audio
-    - autolinks # may adversely affect build times
     - open-in-new-tab
     - meta-descriptions:
         enabled: !ENV [META_DESCRIPTIONS, false]
