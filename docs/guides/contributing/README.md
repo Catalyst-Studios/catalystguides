@@ -21,7 +21,6 @@ nav:
         b. Never disable strict mode for **any** reason unless you have consulted with the team.
     4. Do **NOT** delete or drastically change another author's work (unless they're typos or factual errors) without permission from the *original* author.
     5. No inappropriate content (Profanity, NSFW, Paid content)
-        a. Violaters will be banned from the repository.
     6. All guides should follow the [Writing Your Guide](#writing-your-guide) format.
     7. File and folder names must be **lowercase** with no spaces. Image files can use [camelCase](https://en.wikipedia.org/wiki/Camel_case).
     8. Eliminate/minimize external links to content like document, images, or videos.
