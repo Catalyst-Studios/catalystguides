@@ -37,7 +37,7 @@
 
 ## Contributing
 
-The majority of the Catalyst Guides are community contributed. We highly appreciate any contributions. Whether you are helping us create new guides, improving our current ones, or spreading the word - we would love to have you as a part of the Catalyst community! Please refer to our <a href="https://catalyst-studios.github.io/catalystguides/contributing/contributing/">contribution guide</a> and [code of conduct](./CODE_OF_CONDUCT.md).
+The majority of the Catalyst Guides are community contributed. We highly appreciate any contributions. Whether you are helping us create new guides, improving our current ones, or spreading the word - we would love to have you as a part of the Catalyst community! Please refer to our <a href="https://catalyst-studios.github.io/catalystguides/guides/contributing/">contribution guide</a> and [code of conduct](./CODE_OF_CONDUCT.md).
 
 - Bug Report: If you see an error in the guides contents or encounter an issue while using Catalyst Guides, please create a [bug report](https://github.com/Catalyst-Studios/catalystguides/issues/new).
 
