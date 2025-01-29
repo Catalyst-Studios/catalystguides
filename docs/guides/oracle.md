@@ -1,6 +1,6 @@
 ---
 title: Free Oracle Server Setup
-description: Guide on how to setup an atm server with Oracle Cloud VMs
+description: Guide on how to setup a server with Oracle Cloud VMs
 authors:
  - ArcTrooper
 ---
@@ -15,7 +15,7 @@ authors:
 	If you don't know what these terms are, then this method likely is not for you.
 	
 ???+ danger "Warning"
-	There have been reports of Oracle banning user accounts for seemingly no reason. Make sure to have a [backup of your world downloaded](../backups.md) just in case that happens.
+	There have been reports of Oracle banning user accounts for seemingly no reason. Make sure to have a `[backup of your world](../backups.md)` just in case that happens.
 
 ## Sign up for Oracle Account
 
@@ -24,15 +24,16 @@ authors:
 3. Once you verified your email, enter and confirm your password, leave **Company Name** blank, create an **Cloud Account Name**, then select your **Home Region** or whatever is closest to where you live.
 4. Enter your **Address information**, then verify your **Phone number**.
 5. Now you'll need to enter credit card information.
+	- You can use a service such as Privacy.com to create a virtual card if you prefer not to give out your actual card info.
+	- You will never be charged for an "always free" account.
+6. Agree to the TOS and click **Start my free trial**.
+
+It will take a bit to provision a new cloud account, you'll get an email titled **Your Oracle Cloud Account is Fully Provisioned** once your account is ready to go.
 
 ???+ tip "Virtual CC"
 	You can use a service such as Privacy.com to create a virtual card if you prefer not to give out your actual card info.
 	
 !!! info "You will never be charged for an "always free" account."
-
-6. Agree to the TOS and click **Start my free trial**.
-
-It will take a bit to provision a new cloud account, you'll get an email titled **Your Oracle Cloud Account is Fully Provisioned** once your account is ready to go.
 
 ## Creating a VM
 
@@ -42,7 +43,7 @@ list steps with images
 
 save private ssh key to `C:\Users\pcName` for easy Powershell access
 
-## Opening Ports for Public Access
+## Opening Minecraft Server Ports
 
 Add 2 Ingress Rules
 
@@ -52,7 +53,7 @@ Port: 25565
 
 ## Connecting to VM with SSH
 
-[MobaXterm SSH Client](https://mobaxterm.mobatek.net)
+You can use Powershell, or you can download [MobaXterm SSH Client](https://mobaxterm.mobatek.net) for easier access. This is what I'll be using for the remainder of this guide.
 
 Powershell: `ssh -i whateverYouNamedIt.key opc@255.255.255.255`
 
@@ -67,7 +68,7 @@ https://www.youtube.com/watch?v=IUxbffxRQ5U
 3. `sudo mount /dev/sdb /mnt/whatYouNamedItPreviously`
 4. `sudo nano /etc/fstab`
 5. `/dev/sdb /mnt/whatYouNamedIt ext4 defaults,nofail 0 0`
-	- `Ctrl+o` to save. `Ctrl+x` to exit nano
+	- `Ctrl+O` to save. `Ctrl+X` to exit nano
 6. Reboot instance
 
 https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/addingstorage.htm
@@ -82,7 +83,7 @@ https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/addingstorage.htm
 
 `unzip filename.zip`
 
-## Install Java
+### Installing Java
 
 `yum list jdk*` may take a while
 
@@ -120,13 +121,13 @@ Start server
 
 `bash startserver.sh`
 
-## Whitelisting and Connecting
+### Whitelisting and Connecting
 
 The server is set to whitelist by default.
 
 After server is done loading, whitelist player(s) using: `whitelist add playerUsername`.
 
-OP players using: `op playerUsername`.
+OP players using: `op playerUsername`
 
 Your server ip is `vmIpAddress:25565`
 
@@ -134,8 +135,8 @@ Your server ip is `vmIpAddress:25565`
 
 `bash startserver.sh` to start the server again.
 
-## Backing up your server world
+### Backing up your server world
 
 Mobaxterm download `world` folder or latest simplebackups zip file (will take a awhile)
 
-> All The Mods | [GitHub](https://github.com/AllTheMods) | [Discord](https://discord.com/invite/allthemods) | [Oracle Cloud](https://www.oracle.com/cloud/free/)
+> [Oracle Cloud](https://www.oracle.com/cloud/free/)
