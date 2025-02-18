@@ -17,6 +17,7 @@ jobs:
       ENABLE_GIT_AUTHORS: true
       ENABLE_MINIFY: true
       ENABLE_STRICT_GIT_REVISION_DATE: true
+      ENABLE_GIT_COMMITTERS: true
     steps:
       - uses: actions/checkout@v4
         with:
