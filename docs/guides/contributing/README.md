@@ -20,8 +20,7 @@ nav:
         a. Resolve/get help for any warnings/errors before pushing.
         b. Never disable strict mode for **any** reason unless you have consulted with the team.
     4. Do **NOT** delete or drastically change another author's work (unless they're typos or factual errors) without permission from the *original* author.
-    5. No inappropriate content (Profanity, NSFW, Paid content)
-        a. Violaters will be banned from the repository.
+    5. Keep the guides PG (No profanity, NSFW, Sponsored Content, etc.)
     6. All guides should follow the [Writing Your Guide](#writing-your-guide) format.
     7. File and folder names must be **lowercase** with no spaces. Image files can use [camelCase](https://en.wikipedia.org/wiki/Camel_case).
     8. Eliminate/minimize external links to content like document, images, or videos.
@@ -115,7 +114,7 @@ Check out [the formatting guide](examples/README.md) for every formatting option
 ???+ danger "Warning"
     **DON'T** use ++tab++ to indent a list of authors in the `authors` section of document headers. It *WILL* cause syntax errors. 
 
-    Use a single space instead.
+    Use spaces instead.
 
 !!! warning "The highlighted lines are required!"
 
@@ -147,7 +146,7 @@ If you want to list the pages of your guide in its own order, you can create a `
 ???+ danger "Warning"
     **DON'T** use ++tab++ to indent a list of pages in `.pages` files. It *WILL* cause syntax errors. 
 
-    Use a single space instead.
+    Use spaces instead.
 
 !!! warning "The highlighted lines are required!"
 
@@ -234,19 +233,19 @@ If you have any question, feel free to [join the Discord](https://discord.gg/YCH
 
 ### FAQ
 
-??? question "My header is displaying above the page title."
+???+ question "My header is displaying above the page title."
     - You likely put a ++tab++ indent in your list of authors.
     - Remember, only use a single space when indenting
     
     `![](img/faqHeader.png)`
 
-??? question "My authors are being spelled out letter by letter."
+???+ question "My authors are being spelled out letter by letter."
     - You didn't put a space after the hyphen and before the author name.
     - It is `- authorName`, not `-authorName`
     
     `![](img/faqAuthor.png)`
     
-??? question "My locally hosted preview won't refresh with changes."
+???+ question "My locally hosted preview won't refresh with changes."
     - Check your PowerShell console output and see if it produces any `warning` or `error`. It will tell you exactly what is wrong.
     - Most likely, you have a misspelled file name or you have the incorrect path to an image.
     
