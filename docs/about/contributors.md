@@ -1,11 +1,6 @@
----
-title: Catalyst Guides Contributors
-description: A list of Catalyst Guides contributors
----
-
 # Contributors
 
-A list of Catalyst Guides contributors
+List of all Contributors who've helped with the guides...
 
 {{ git_site_authors }}
 
