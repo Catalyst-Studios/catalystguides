@@ -81,8 +81,7 @@ plugins:
         show_email_address: false
         fallback_to_empty: true
         sort_authors_by: contribution
-        enabled: !ENV [ENABLED_GIT_AUTHORS, false]
-        strict: !ENV [ENABLE_STRICT_GIT_AUTHORS, false]
+        enabled_on_serve: false
     - minify:
         minify_html: !ENV [ENABLE_MINIFY, false]
         minify_js: !ENV [ENABLE_MINIFY, false]
