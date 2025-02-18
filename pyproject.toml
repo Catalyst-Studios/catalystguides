@@ -1,6 +1,6 @@
 [project]
 name = "catalyststudioguides"
-version = "0.0.1"
+version = "0.1.5"
 description = "Guides for Catalyst Studios modpacks"
 readme = "index.md"
 requires-python = ">=3.12"
