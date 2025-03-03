@@ -55,7 +55,7 @@ Port: 25565
 
 You can use Powershell, or you can download [MobaXterm SSH Client](https://mobaxterm.mobatek.net) for easier access. This is what I'll be using for the remainder of this guide.
 
-Powershell: `ssh -i whateverYouNamedIt.key opc@255.255.255.255`
+Powershell: `ssh -i whateverYouNamedIt.key opc@theIPaddress`
 
 ### Adding More Storage
 
