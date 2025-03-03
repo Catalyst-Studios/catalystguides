@@ -32,6 +32,7 @@ theme:
     favicon: assets/img/catyLogo.png
     font: 
         text: Exo 2
+        # text: Funnel Display
     icon:
         repo: fontawesome/brands/github
         edit: material/pencil

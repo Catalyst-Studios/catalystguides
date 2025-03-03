@@ -15,4 +15,4 @@ Refamiliarise yourself with mods such as **Mystical Agriculture**, **Applied Ene
 
 **World generation** should always be kept simple, yet feel fun to explore and traverse through, which is why we have gone with the fan favourite of **Biomes o' Plenty**. By sticking with one world generation mod, we can offer a clean, efficient world that will not lag you out when your friends explore deeper into the world. This reiterates our commitment to a quality modpack perfect for **playing with friends**.
 
-> Little Bit Large | [CurseForge](https://legacy.curseforge.com/minecraft/modpacks/little-bit-large) | [GitHub](https://github.com/Catalyst-Studios/Little-Bit-Large)
+> Little Bit Large | [CurseForge](https://legacy.curseforge.com/minecraft/modpacks/little-bit-large) | [GitHub](https://github.com/Catalyst-Studios/Little-Bit-Large) | [Discord](https://discord.gg/YCHPXeW9GZ)
