@@ -67,7 +67,9 @@ theme:
 
 plugins:
     - search
-    - mkdocs-video
+    - mkdocs-video:
+        video_autoplay: false
+        video_loop: false
     - mkdocs-audio
     - open-in-new-tab
     - meta-descriptions:
